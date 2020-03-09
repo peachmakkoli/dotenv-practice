@@ -9,7 +9,7 @@ url = "https://api.themoviedb.org/3/search/movie"
 
 params = {
 	query: "기생충",
-	api_key: ENV['API_KEY']
+	api_key: ENV['MOVIE_DB_KEY']
 }
 
 response = HTTParty.get(url, query: params)
