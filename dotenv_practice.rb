@@ -14,6 +14,12 @@ params = {
 
 response = HTTParty.get(url, query: params)
 
+title = response["results"][0]["title"]
+overview = response["results"][0]["overview"]
+
 p response 
+p title
+p overview
+
 # puts ENV['LUNCH']
 # # => from .env
